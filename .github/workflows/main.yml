@@ -3,17 +3,8 @@ name: CheckVersion
 on: [push]
 
 jobs:
-  build:
-
+  check:
     runs-on: ubuntu-latest
-    
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Install jq
-      run: apt-get install jq
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    - name: Check Package Version
+      uses: knolleary/action-check-package-version
