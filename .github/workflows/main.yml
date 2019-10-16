@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check Package Version
-      uses: knolleary/action-check-package-version
+      uses: knolleary/action-check-package-version@master
